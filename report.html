@@ -11992,6 +11992,19 @@ An increase in PTRATIO would also lead to a decrease the prices of homes. The hi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -12111,7 +12124,7 @@ An increase in PTRATIO would also lead to a decrease the prices of homes. The hi
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
 <br/>
-Yes, the R2 is very close to 1 meaning the it predicts mostly predicts the target variable</p>
+Yes, the R2 is very close to 1. Since there is a high amount of variance explained their should be very little difference between the observed and predicted value.</p>
 
 </div>
 </div>
@@ -12277,7 +12290,7 @@ Yes, the R2 is very close to 1 meaning the it predicts mostly predicts the targe
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
 <br/>
-More data in a training set will reduce the amount of overfitting in the model. Too little data could cause poor performance on both the training and test dataset.</p>
+When using a learning algorithm we are typically interested in predicting some variable. We split the data into training and testing so that we have data we can predict on and determine our model's performance. The training set will allow us to learn the parameters of the model and potentially reduce overfitting and underfitting in our results.</p>
 
 </div>
 </div>
@@ -12512,7 +12525,7 @@ The grid search technique is a method that allows us to try different hyperparam
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
 <br/>
-K-fold cross-validation takes the training data and splits it into K bins. The model then trains the data on K-1 bins and tests it on the validation set which is the Kth bin. This is repeated K times so that each of the training bins will be used as a validation bin. The average score is then used to suggest the performance of the model. This technique allows us to reduce overfitting when using gridsearch.</p>
+K-fold cross-validation takes the training data and splits it into K bins. The model then trains the data on K-1 bins and tests it on the validation set which is the Kth bin. This is repeated K times so that each of the training bins will be used as a validation bin. The average score is then used to suggest the performance of the model. When k-fold cross validation is combined with gridsearch we are making sure we select hyperparameters for an optimal model that isn't overfitted.</p>
 
 </div>
 </div>
